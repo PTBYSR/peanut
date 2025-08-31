@@ -141,7 +141,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div id="tokenomics" className="w-full bg-[#BE731D] flex justify-center items-center mt-[200px] mb-[50px] bg-white relative">
+          <div id="tokenomics" className="w-full bg-[#BE731D] flex justify-center items-center mt-[200px] mb-[50px] relative">
             <div>
               <h2 className="relative z-[10] text-center text-[60px] text-[#EEDCDC] stroke-token">
                       TOKENOMICS
