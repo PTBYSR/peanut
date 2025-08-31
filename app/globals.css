@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,4 +8,37 @@
 .center-all{
   justify-content: "center";
   align-items: "center";
+}
+
+.gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.stroke-about {
+  -webkit-text-stroke: 12px #2F9259 ;
+   paint-order: stroke fill;
+  text-shadow: 
+    0 0 5px #2F9259,
+    0 0 10px #2F9259,
+    0 0 20px #2F9259,
+    0 0 40px #2F9259;
+}
+
+
+.stroke-token {
+  -webkit-text-stroke: 12px #310D01 ;
+   paint-order: stroke fill;
+  text-shadow: 
+    0 0 5px #310D01,
+    0 0 10px #310D01,
+    0 0 20px #310D01,
+    0 0 40px #310D01;
 }

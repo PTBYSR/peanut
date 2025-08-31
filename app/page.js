@@ -71,7 +71,7 @@ export default function Home() {
 
         <div
           id="about"
-          className="border   border-blue-600 relative bg-[#BE731D] h-screen md:h-auto w-screen  "
+          className="border   border-blue-600 relative bg-[#BE731D]  md:h-auto w-screen  "
         >
           <Image
             className="z-[1] border -top-[400px] border-green-500 absolute w-full"
@@ -82,34 +82,62 @@ export default function Home() {
 
           <div className="-z-[1] mt-[90px] px-[10px]">
             <div className="w-full z-[100] relative">
-
-
-
               <div className="w-full border border-pink-700 mt-[70px] z-[1]">
-                <div className=" w-full flex-col mt-[300px] flex justify-center items-center z-[1] border border-blue-800">
-                  <Image
+                <div className=" w-full flex-col mt-[160px] flex justify-center items-center z-[1] border border-blue-800">
+                  {/* <Image
                     className=""
                     src={"/about-header.png"}
                     width={200}
                     height={200}
-                  />
+                  /> */}
 
-                  <div className="w-[300px] border border-pink-500">
-                  <Image className="w-full border border-amber-900" src={"/about-text.png"} width={100} height={100} />
+                  <div className="w-[330px] border border-pink-500">
+                    <h2 className="text-center text-[70px] text-white stroke-about">
+                      ABOUT
+                    </h2>
+
+                    <p className="text-[#321502] text-[18px] font-bold text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                  <div className="mt-[30px] relative w-full border border-green-500">
+                    <div className="text-xl text-center font-bold text-[#633300] relative z-[10]">
+                      BUY NOW
+                    </div>
+
+                    <Image
+                      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[0]"
+                      src="/button-wrapper-mb.svg"
+                      width={300}
+                      height={300}
+                      alt="button background"
+                    />
+                  </div>
+                  <div className="mt-[30px]">
+                    <Image src={"/about-side-img-mb.svg"} width={350} height={350} />
                   </div>
                 </div>
               </div>
 
-
-
-
               <Image
                 className="w-full top-0 -z-[1] absolute"
-                src={"/about-wrapper.png"}
+                src={"/about-wrapper.svg"}
                 width={100}
                 height={100}
               />
             </div>
+          </div>
+
+          <div id="tokenomics" className="w-full flex justify-center items-center mt-[200px] mb-[50px] bg-white relative">
+            <div>
+              <h2 className="relative z-[10] text-center text-[60px] text-[#EEDCDC] stroke-token">
+                      TOKENOMICS
+                    </h2>
+            </div>
+            <Image className="absolute -top-[180px]" src={"/token-wrapper-mb.svg"} width={1200} height={200} />
           </div>
         </div>
       </main>
