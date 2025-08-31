@@ -5,7 +5,10 @@ import nav from "../public/nav.png";
 export default function Home() {
   return (
     <div className="">
-      <main className="">
+      <div className="w-full hidden md:block bg-black text-white text-center text-[50px] p-2">
+        Still under development
+      </div>
+      <main className="md:hidden">
         <nav className="flex justify-center items-center ">
           <Image
             className="absolute hidden md:block  md:top-[0.2px] -z-[1]"
