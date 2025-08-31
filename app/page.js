@@ -7,13 +7,13 @@ export default function Home() {
     <div className="">
       <main className="">
         <nav    className="border flex justify-center items-center ">
-{/* <Image className="absolute  md:top-[0.2px] -z-10" src={"/nav.png"} alt="logo" width={1100} height={200}/> */}
-<Image className="absolute -top-[15px] -z-10" src={"/nav-mb.png"} alt="logo" width={500} height={200}/>
+<Image className="absolute hidden md:block  md:top-[0.2px] -z-[1]" src={"/nav.png"} alt="logo" width={1100} height={200}/>
+<Image className="absolute md:hidden -top-[15px] -z-[1]" src={"/nav-mb.png"} alt="logo" width={500} height={200}/>
 <div className="w-full flex justify-center items-center">
 
-<div className="flex justify-between items-center border border-pink-500 md:w-[70%]">
+<div className="flex px-[20px] w-full justify-between items-center border border-pink-500 md:w-[70%]">
   
-    <div id="logo" className="md:border">
+    <div id="logo" className="md:border md:w-auto w-[40px]">
   <Image src={"/logo.png"} width={60} height={60} />
     </div>
   
@@ -30,12 +30,12 @@ export default function Home() {
       </Link>
     </div>
 
-    <div id="buy" className="md:w-auto w-[100px]"> 
+    <div id="buy" className="md:w-auto w-[120px]"> 
       
     <Image src={"/buy.png"} width={200} height={100} />
   </div>
   
-  <div id="x">
+  <div id="x" className="md:w-auto w-[60px]">
     <Image src={"/x.png"} width={100} height={100} />
   </div>
 </div>
@@ -45,8 +45,8 @@ export default function Home() {
         </nav>
        
 
-<div className="h-screen border-2  mt-[50px] justify-center items-center flex relative"> 
-  <Image className="-z-10 absolute md:hidden hidden  top-[100px] border" src={"/hero.svg"} alt="hero" width={1000} height={1000} />
+<div className="h-[600px] border-2  mt-[50px] justify-center items-center flex relative"> 
+  <Image className="-z-[1] absolute md:hidden hidden  top-[100px] border" src={"/hero.svg"} alt="hero" width={1000} height={1000} />
   
   <div className=" mt-[26%] ml-[40px] hidden flex-row justify-between border w-[40%]">
     <div className="animate-tilt">
@@ -59,8 +59,11 @@ export default function Home() {
 </div>
 
 
-<div id="about">
-
+<div id="about" className="border border-blue-600 relative bg-[#BE731D] h-screen md:h-auto w-screen  ">
+<Image className="border -top-[400px] border-green-500 absolute w-full" src={"/drip-hero.png"} width={100} height={100} />
+<div className="w-full mt-[50px] p-[10px]">
+  <Image className="w-full" src={"/about-wrapper.png"} width={100} height={100} />
+</div>
 </div>
       </main>
       <footer className="">
