@@ -193,10 +193,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div
-          id="tokenomics"
-          className="w-full bg-white  mb-[50px] relative"
-        >
+        <div id="tokenomics" className="w-full bg-white  mb-[50px] relative">
           <div>
             <div className="w-full flex justify-center items-center">
               <svg
@@ -499,7 +496,12 @@ export default function Home() {
           </div>
 
           <div className="relative mt-[100px]  px-[10px] z-[10] w-full">
-            <Image className="w-full" src={"/token-side-img-mb.svg"} width={100} height={500} />
+            <Image
+              className="w-full"
+              src={"/token-side-img-mb.svg"}
+              width={100}
+              height={500}
+            />
           </div>
 
           <Image
@@ -509,12 +511,25 @@ export default function Home() {
             height={500}
           />
         </div>
-
-
       </main>
-      <footer className="">
+      <footer className="w-screen relative mt-[150px]">
+        <div className=" -left-[20px] z-[10] h-[90px] w-[110vw] absolute -top-[40px]">
+
+        <Image
+          className=""
+          src={"/footer-wrapper-mb.svg"}
+          fill
+          
+        />
+        </div>
 
 
+        <Image
+          src={"/footer-img.svg"}
+          width={100}
+          height={50}
+          className="w-full"
+        />
       </footer>
     </div>
   );
