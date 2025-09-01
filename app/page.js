@@ -1,3 +1,5 @@
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import nav from "../public/nav.png";
@@ -8,8 +10,16 @@ import Footer from "./components/Footer";
 import TokenDsk from "./components/TokenDsk";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+
+
+
+
+
+
   return (
-    <div className="">
+    <div >
       <div className="w-full hidden bg-black text-white text-center text-[50px] p-2">
         Still under development
       </div>
@@ -96,9 +106,27 @@ export default function Home() {
           <AboutDsk />
           <TokenDsk />
         </div>
-        
+
       </main>
-      <Footer />
+      <footer className="w-screen relative mt-[150px] overflow-x-clip">
+              <div className=" -left-[100px] z-[10] h-[100px] w-[150vw] absolute -top-[40px]">
+      
+              <Image
+                className=""
+                src={"/footer-wrapper-mb.svg"}
+                fill
+                
+              />
+              </div>
+      
+      
+              <Image
+                src={"/footer-img.svg"}
+                width={100}
+                height={50}
+                className="w-full"
+              />
+            </footer>
     </div>
   );
 }
