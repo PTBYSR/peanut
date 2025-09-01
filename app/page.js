@@ -43,20 +43,21 @@ export default function Home() {
               </div>
 
               <div className=" flex ">
+                <div id="buy" className="md:w-auto w-[120px]">
+                  <Image src={"/buy.png"} width={200} height={100} />
+                </div>
 
-              <div id="buy" className="md:w-auto w-[120px]">
-                <Image src={"/buy.png"} width={200} height={100} />
+                <div id="x" className="md:w-auto w-[60px]">
+                  <Image src={"/x.png"} width={100} height={100} />
+                </div>
+                <div id="x" className="md:w-auto w-[60px]">
+                  <Image
+                    src={"/hamburger-menu-mb.svg"}
+                    width={100}
+                    height={100}
+                  />
+                </div>
               </div>
-
-              <div id="x" className="md:w-auto w-[60px]">
-                <Image src={"/x.png"} width={100} height={100} />
-              </div>
-              <div id="x" className="md:w-auto w-[60px]">
-                <Image src={"/hamburger-menu-mb.svg"} width={100} height={100} />
-              </div>
-              </div>
-
-              
             </div>
           </div>
         </nav>
@@ -103,8 +104,6 @@ export default function Home() {
                   /> */}
 
                   <div className="w-[330px] relative ">
-                    
-
                     <div className=" flex justify-center items-center relative z-[10] ">
                       {/* <Image
                     className=""
@@ -113,11 +112,11 @@ export default function Home() {
                     height={300}
                   /> */}
                       <Image
-                    className=""
-                    src={"/about-header.svg"}
-                    width={250}
-                    height={250}
-                  />
+                        className=""
+                        src={"/about-header.svg"}
+                        width={250}
+                        height={250}
+                      />
                     </div>
 
                     <p className="text-[#321502] px-[20px]  mt-2 relative z-[10] text-[16px] font-bold text-center">
@@ -141,9 +140,12 @@ export default function Home() {
                     />
                   </div>
 
-
                   <div className="mt-[30px] relative z-[10]">
-                    <Image src={"/about-side-img-mb.svg"} width={300} height={300} />
+                    <Image
+                      src={"/about-side-img-mb.svg"}
+                      width={300}
+                      height={300}
+                    />
                   </div>
                 </div>
               </div>
@@ -156,16 +158,52 @@ export default function Home() {
               />
             </div>
           </div>
-
         </div>
-          <div id="tokenomics" className="w-full bg-[#BE731D] flex justify-center items-center mt-[200px] mb-[50px] relative">
-            <div>
-              {/* <h2 className="relative z-[10] text-center text-[60px] text-[#EEDCDC] stroke-token">
-                      TOKENOMICS
-                    </h2> */}
-            </div>
-            <Image className=" absolute -top-[350px]" src={"/token-wrapper-mb.svg"} width={500} height={500} />
+
+
+        <div
+          id="tokenomics"
+          className="w-full bg-[#BE731D] flex justify-center items-center mb-[50px] relative"
+        >
+          <div className="w-full flex justify-center items-center">
+            <svg viewBox="0 0 300 100" className="w-full h-auto max-w-[600px] mx-auto relative z-[10]"
+  preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <filter id="dropshadow" height="130%">
+                  <feDropShadow
+                    dx="3"
+                    dy="3"
+                    stdDeviation="2"
+                    floodColor="rgba(0,0,0,0.6)"
+                  />
+                </filter>
+              </defs>
+
+              <text
+                x="50%"
+                y="50%"
+                dy=".35em"
+                textAnchor="middle"
+                fill="#EEDCDC"
+                stroke="#310D01"
+                strokeWidth="8"
+                strokeLinejoin="round"
+                paintOrder="stroke fill"
+                fontSize="40"
+                fontWeight="bold"
+                filter="url(#dropshadow)"
+              >
+                TOKENOMICS
+              </text>
+            </svg>
           </div>
+          <Image
+            className=" absolute -top-[140px]"
+            src={"/token-wrapper-mb.svg"}
+            width={500}
+            height={500}
+          />
+        </div>
       </main>
       <footer className=""></footer>
     </div>
