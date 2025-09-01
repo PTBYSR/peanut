@@ -229,8 +229,8 @@ export default function Home() {
           </div>
 
           <div id="token-drip-1" className=" relative z-[10] flex flex-col justify-center items-center mt-[20px] gap-4">
-            <div className="w-full border-2 border-blue">
-              <svg viewBox="0 0 300 50" className="border-2 border-black w-full h-auto max-w-[600px] mx-auto relative z-[10]"
+            <div className="w-full ">
+              <svg viewBox="0 0 300 50" className=" w-full h-auto max-w-[600px] mx-auto relative z-[10]"
   preserveAspectRatio="xMidYMid meet">
               <defs>
                 <filter id="dropshadow2" height="130%">
@@ -260,7 +260,7 @@ export default function Home() {
                 1,000,000,000,000
               </text>
             </svg>
-              <Image className="w-full absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]" src={"/token-drip-1-mb.svg"} width={100} height={100} />
+              <Image className="mt-[16px] w-full absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]" src={"/token-drip-1-mb.svg"} width={100} height={100} />
             </div>
           </div>
 
