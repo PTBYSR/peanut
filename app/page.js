@@ -20,8 +20,8 @@ export default function Home() {
 
   return (
     <div >
-      <div className="w-full hidden bg-black text-white text-center text-[50px] p-2">
-        Still under development
+      <div className="w-full hidden md:block bg-black text-white text-center text-[50px] p-2">
+        Still under development...
       </div>
       <main className="md:hidden ">
         <nav className="flex justify-center items-center ">
@@ -108,7 +108,7 @@ export default function Home() {
         </div>
 
       </main>
-      <footer className="w-screen relative mt-[150px] overflow-x-clip">
+      <footer className="md:hidden w-screen relative mt-[150px] overflow-x-clip">
               <div className=" -left-[100px] z-[10] h-[100px] w-[150vw] absolute -top-[40px]">
       
               <Image
