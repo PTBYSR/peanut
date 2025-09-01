@@ -82,19 +82,19 @@ export default function Home() {
 
         <div
           id="about"
-          className=" relative bg-[#BE731D]  md:h-auto w-screen  "
+          className="h-[1000px] relative bg-[#BE731D]  md:h-auto w-screen  "
         >
           <Image
-            className="  border-blue z-[1] -top-[440px]  absolute w-full"
-            src={"/drip-hero.png"}
+            className=" z-[1] -top-[400px]  absolute w-full"
+            src={"/hero-drip.svg"}
             width={100}
             height={100}
           />
 
-          <div className="relative   mt-[90px] px-[10px]">
+          <div className=" px-[10px]">
             <div className="w-full  relative">
-              <div className="w-full border  mt-[70px] ">
-                <div className=" w-full flex-col mt-[160px] flex justify-center items-center ">
+              <div className="w-full   ">
+                <div className=" pt-[150px] w-full flex-col flex justify-center items-center ">
                   {/* <Image
                     className=""
                     src={"/about-header.png"}
@@ -103,50 +103,24 @@ export default function Home() {
                   /> */}
 
                   <div className="w-[330px] relative ">
-                    <svg viewBox="0 0 300 80" className="w-full max-w-xs relative z-[10] mx-auto mb-[-20px]">
-  <text
-    x="50%" y="50%" dy=".35em" textAnchor="middle"
-    fill="white"
-    stroke="#2e7d32"
-    strokeWidth="2"
-    fontSize="48"
-    fontWeight="bold"
-    className="relative z-[10]"
-    // fontFamily="Comic Sans MS, sans-serif"
-    style={{ filter: "drop-shadow(0 0 10px #2e7d32)" }}
-  >
-    ABOUT
-  </text>
-</svg>
+                    
 
+                    <div className=" flex justify-center items-center relative z-[10] ">
+                      {/* <Image
+                    className=""
+                    src={"/about-header.png"}
+                    width={300}
+                    height={300}
+                  /> */}
+                      <Image
+                    className=""
+                    src={"/about-header.svg"}
+                    width={250}
+                    height={250}
+                  />
+                    </div>
 
- <svg viewBox="0 0 300 100" className="w-full max-w-xs relative z-[10] mx-auto mb-[-20px]">
-      <text
-        x="50%"
-        y="50%"
-        dy=".35em"
-        textAnchor="middle"
-        fill="white"
-        stroke="#2F9259"
-        strokeWidth="9"
-        strokeLinejoin="round"
-        paintOrder="stroke fill"
-        fontSize="62"
-        fontWeight="bold"
-        style={{
-          filter:
-            "drop-shadow(0 0 2px #2F9259) drop-shadow(0 0 4px #2F9259)",
-        }}
-      >
-        ABOUT
-      </text>
-    </svg>
-
-                    <h2 className="text-center relative z-[10] text-[70px] text-white stroke-about">
-                      ABOUT
-                    </h2>
-
-                    <p className="text-[#321502] relative z-[10] text-[18px] font-bold text-center">
+                    <p className="text-[#321502] px-[20px]  mt-2 relative z-[10] text-[16px] font-bold text-center">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -161,15 +135,15 @@ export default function Home() {
                     <Image
                       className="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]"
                       src="/button-wrapper-mb.svg"
-                      width={300}
-                      height={300}
+                      width={270}
+                      height={270}
                       alt="button background"
                     />
                   </div>
 
 
                   <div className="mt-[30px] relative z-[10]">
-                    <Image src={"/about-side-img-mb.svg"} width={350} height={350} />
+                    <Image src={"/about-side-img-mb.svg"} width={300} height={300} />
                   </div>
                 </div>
               </div>
@@ -183,15 +157,15 @@ export default function Home() {
             </div>
           </div>
 
+        </div>
           <div id="tokenomics" className="w-full bg-[#BE731D] flex justify-center items-center mt-[200px] mb-[50px] relative">
             <div>
-              <h2 className="relative z-[10] text-center text-[60px] text-[#EEDCDC] stroke-token">
+              {/* <h2 className="relative z-[10] text-center text-[60px] text-[#EEDCDC] stroke-token">
                       TOKENOMICS
-                    </h2>
+                    </h2> */}
             </div>
-            <Image className="absolute -top-[140px]" src={"/token-wrapper-mb.svg"} width={1200} height={200} />
+            <Image className=" absolute -top-[350px]" src={"/token-wrapper-mb.svg"} width={500} height={500} />
           </div>
-        </div>
       </main>
       <footer className=""></footer>
     </div>
