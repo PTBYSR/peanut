@@ -62,7 +62,7 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="h-[600px] mt-[50px] justify-center items-center flex relative">
+        <div className="h-[600px] mt-[65px] justify-center items-center flex relative">
           <Image
             className="-z-[1] absolute md:hidden hidden  top-[100px] b"
             src={"/hero.svg"}
@@ -117,36 +117,39 @@ export default function Home() {
                         width={250}
                         height={250}
                       /> */}
-                      <svg viewBox="0 0 300 100" className="w-full h-auto max-w-[600px] mx-auto relative z-[10]"
-  preserveAspectRatio="xMidYMid meet">
-              <defs>
-                <filter id="dropshadow" height="130%">
-                  <feDropShadow
-                    dx="3"
-                    dy="3"
-                    stdDeviation="7"
-                    floodColor="#2F9259"
-                  />
-                </filter>
-              </defs>
+                      <svg
+                        viewBox="0 0 300 100"
+                        className="w-full h-auto max-w-[600px] mx-auto relative z-[10]"
+                        preserveAspectRatio="xMidYMid meet"
+                      >
+                        <defs>
+                          <filter id="dropshadow" height="130%">
+                            <feDropShadow
+                              dx="3"
+                              dy="3"
+                              stdDeviation="7"
+                              floodColor="#2F9259"
+                            />
+                          </filter>
+                        </defs>
 
-              <text
-                x="50%"
-                y="50%"
-                dy=".35em"
-                textAnchor="middle"
-                fill="white"
-                stroke="#2F9259"
-                strokeWidth="11"
-                strokeLinejoin="round"
-                paintOrder="stroke fill"
-                fontSize="53"
-                fontWeight="bold"
-                filter="url(#dropshadow)"
-              >
-                ABOUT
-              </text>
-            </svg>
+                        <text
+                          x="50%"
+                          y="50%"
+                          dy=".35em"
+                          textAnchor="middle"
+                          fill="white"
+                          stroke="#2F9259"
+                          strokeWidth="11"
+                          strokeLinejoin="round"
+                          paintOrder="stroke fill"
+                          fontSize="53"
+                          fontWeight="bold"
+                          filter="url(#dropshadow)"
+                        >
+                          ABOUT
+                        </text>
+                      </svg>
                     </div>
 
                     <p className="text-[#321502] px-[20px]  mt-2 relative z-[10] text-[16px] font-bold text-center">
@@ -190,80 +193,314 @@ export default function Home() {
           </div>
         </div>
 
-
         <div
           id="tokenomics"
-          className="w-full bg-[#BE731D]  mb-[50px] relative"
+          className="w-full bg-white  mb-[50px] relative"
         >
-          <div className="w-full flex justify-center items-center">
-            <svg viewBox="0 0 300 100" className="w-full h-auto max-w-[600px] mx-auto relative z-[10]"
-  preserveAspectRatio="xMidYMid meet">
-              <defs>
-                <filter id="dropshadow1" height="130%">
-                  <feDropShadow
-                    dx="3"
-                    dy="3"
-                    stdDeviation="2"
-                    floodColor="rgba(0,0,0,0.6)"
-                  />
-                </filter>
-              </defs>
-
-              <text
-                x="50%"
-                y="50%"
-                dy=".35em"
-                textAnchor="middle"
-                fill="#EEDCDC"
-                stroke="#310D01"
-                strokeWidth="8"
-                strokeLinejoin="round"
-                paintOrder="stroke fill"
-                fontSize="40"
-                fontWeight="bold"
-                filter="url(#dropshadow1)"
+          <div>
+            <div className="w-full flex justify-center items-center">
+              <svg
+                viewBox="0 0 300 100"
+                className="w-full h-auto max-w-[600px] mx-auto relative z-[10]"
+                preserveAspectRatio="xMidYMid meet"
               >
-                TOKENOMICS
-              </text>
-            </svg>
-          </div>
-
-          <div id="token-drip-1" className=" relative z-[10] flex flex-col justify-center items-center mt-[20px] gap-4">
-            <div className="w-full ">
-              <svg viewBox="0 0 300 50" className=" w-full h-auto max-w-[600px] mx-auto relative z-[10]"
-  preserveAspectRatio="xMidYMid meet">
-              <defs>
-                <filter id="dropshadow2" height="130%">
-                  <feDropShadow
-                    dx="0"
-                    dy="0"
-                    stdDeviation="6"
-                    floodColor="white"
-                  />
-                </filter>
-              </defs>
-
-              <text
-                x="50%"
-                y="50%"
-                dy=".35em"
-                textAnchor="middle"
-                fill="white"
-                // stroke="white"
-                // strokeWidth="1"
-                strokeLinejoin="round"
-                paintOrder="stroke fill"
-                fontSize="25"
-                fontWeight="bold"
-                filter="url(#dropshadow2)"
+                <defs>
+                  <filter id="dropshadow1" height="130%">
+                    <feDropShadow
+                      dx="3"
+                      dy="3"
+                      stdDeviation="2"
+                      floodColor="rgba(0,0,0,0.6)"
+                    />
+                  </filter>
+                </defs>
+                <text
+                  x="50%"
+                  y="50%"
+                  dy=".35em"
+                  textAnchor="middle"
+                  fill="#EEDCDC"
+                  stroke="#310D01"
+                  strokeWidth="8"
+                  strokeLinejoin="round"
+                  paintOrder="stroke fill"
+                  fontSize="40"
+                  fontWeight="bold"
+                  filter="url(#dropshadow1)"
+                >
+                  TOKENOMICS
+                </text>
+              </svg>
+            </div>
+            <div
+              id="token-drip-1"
+              className=" relative z-[10] flex flex-col justify-center items-center mt-[20px] gap-4"
+            >
+              <svg
+                viewBox="0 0 300 50"
+                className=" absolute  left-1/2 + -translate-x-1/2 -top-[15px] w-full h-auto max-w-[600px] mx-auto "
+                preserveAspectRatio="xMidYMid meet"
               >
-                1,000,000,000,000
-              </text>
-            </svg>
-              <Image className="mt-[16px] w-full absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]" src={"/token-drip-1-mb.svg"} width={100} height={100} />
+                <defs>
+                  <filter id="dropshadow-ts" height="130%">
+                    <feDropShadow
+                      dx="0"
+                      dy="0"
+                      stdDeviation="4"
+                      floodColor="#BF4E69"
+                    />
+                  </filter>
+                </defs>
+                <text
+                  x="50%"
+                  y="50%"
+                  dy=".35em"
+                  textAnchor="middle"
+                  fill="#BF4E69"
+                  // stroke="#BF4E69"
+                  // strokeWidth="1"
+                  strokeLinejoin="round"
+                  paintOrder="stroke fill"
+                  fontSize="15"
+                  fontWeight="bold"
+                  filter="url(#dropshadow-ts)"
+                >
+                  TOTAL SUPPLY
+                </text>
+              </svg>
+              <div>
+                <Image
+                  className="absolute right-[4px] -top-[45px] z-[10]"
+                  src={"/banana-1.svg"}
+                  width={60}
+                  height={60}
+                />
+              </div>
+              <div> </div>
+              <div className="w-full ">
+                <svg
+                  viewBox="0 0 300 50"
+                  className=" w-full h-auto max-w-[600px] mx-auto relative z-[10]"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <defs>
+                    <filter id="dropshadow2" height="130%">
+                      <feDropShadow
+                        dx="0"
+                        dy="0"
+                        stdDeviation="6"
+                        floodColor="white"
+                      />
+                    </filter>
+                  </defs>
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    textAnchor="middle"
+                    fill="white"
+                    // stroke="white"
+                    // strokeWidth="1"
+                    strokeLinejoin="round"
+                    paintOrder="stroke fill"
+                    fontSize="25"
+                    fontWeight="bold"
+                    filter="url(#dropshadow2)"
+                  >
+                    1,000,000,000,000
+                  </text>
+                </svg>
+                <Image
+                  className="mt-[35px] w-full absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]"
+                  src={"/token-drip-1-mb.svg"}
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div
+              id="token-drip-2"
+              className="relative z-[10] flex flex-col justify-center items-center mt-[65px] gap-4"
+            >
+              <svg
+                viewBox="0 0 300 50"
+                className=" absolute  left-1/2 + -translate-x-1/2 -top-[10px] w-full h-auto max-w-[600px] mx-auto "
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <defs>
+                  <filter id="dropshadow-ts" height="130%">
+                    <feDropShadow
+                      dx="0"
+                      dy="0"
+                      stdDeviation="4"
+                      floodColor="#BF4E69"
+                    />
+                  </filter>
+                </defs>
+                <text
+                  x="50%"
+                  y="50%"
+                  dy=".35em"
+                  textAnchor="middle"
+                  fill="#BF4E69"
+                  // stroke="#BF4E69"
+                  // strokeWidth="1"
+                  strokeLinejoin="round"
+                  paintOrder="stroke fill"
+                  fontSize="15"
+                  fontWeight="bold"
+                  filter="url(#dropshadow-ts)"
+                >
+                  TAXES
+                </text>
+              </svg>
+              <div>
+                <Image
+                  className="absolute left-[4px] -top-[28px] z-[10]"
+                  src={"/banana-2.svg"}
+                  width={45}
+                  height={45}
+                />
+              </div>
+              <div> </div>
+              <div className="w-full ">
+                <svg
+                  viewBox="0 0 300 50"
+                  className=" w-full h-auto max-w-[600px] mx-auto relative z-[10]"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <defs>
+                    <filter id="dropshadow2" height="130%">
+                      <feDropShadow
+                        dx="0"
+                        dy="0"
+                        stdDeviation="3"
+                        floodColor="white"
+                      />
+                    </filter>
+                  </defs>
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    textAnchor="middle"
+                    fill="white"
+                    // stroke="white"
+                    // strokeWidth="1"
+                    strokeLinejoin="round"
+                    paintOrder="stroke fill"
+                    fontSize="25"
+                    fontWeight="bold"
+                    filter="url(#dropshadow2)"
+                  >
+                    0%
+                  </text>
+                </svg>
+                <Image
+                  className="mt-[35px] w-full absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]"
+                  src={"/token-drip-2-mb.svg"}
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div
+              id="token-drip-3"
+              className=" relative z-[10] flex flex-col justify-center items-center mt-[65px] gap-4"
+            >
+              <svg
+                viewBox="0 0 300 50"
+                className=" absolute  left-1/2 + -translate-x-1/2 -top-[10px] w-full h-auto max-w-[600px] mx-auto "
+                preserveAspectRatio="xMidYMid meet"
+              >
+                <defs>
+                  <filter id="dropshadow-ts" height="130%">
+                    <feDropShadow
+                      dx="0"
+                      dy="0"
+                      stdDeviation="4"
+                      floodColor="#BF4E69"
+                    />
+                  </filter>
+                </defs>
+                <text
+                  x="50%"
+                  y="50%"
+                  dy=".35em"
+                  textAnchor="middle"
+                  fill="#BF4E69"
+                  // stroke="#BF4E69"
+                  // strokeWidth="1"
+                  strokeLinejoin="round"
+                  paintOrder="stroke fill"
+                  fontSize="15"
+                  fontWeight="bold"
+                  filter="url(#dropshadow-ts)"
+                >
+                  TOKEN NAME
+                </text>
+              </svg>
+              <div>
+                <Image
+                  className="absolute right-[6px] -top-[5px] z-[10]"
+                  src={"/banana-3.svg"}
+                  width={30}
+                  height={30}
+                />
+                <Image
+                  className="absolute left-[90px] -top-[5px] z-[10]"
+                  src={"/banana-4.svg"}
+                  width={28}
+                  height={28}
+                />
+              </div>
+              <div> </div>
+              <div className="w-full ">
+                <svg
+                  viewBox="0 0 300 50"
+                  className=" w-full h-auto max-w-[600px] mx-auto relative z-[10]"
+                  preserveAspectRatio="xMidYMid meet"
+                >
+                  <defs>
+                    <filter id="dropshadow2" height="130%">
+                      <feDropShadow
+                        dx="0"
+                        dy="0"
+                        stdDeviation="6"
+                        floodColor="white"
+                      />
+                    </filter>
+                  </defs>
+                  <text
+                    x="50%"
+                    y="50%"
+                    dy=".35em"
+                    textAnchor="middle"
+                    fill="white"
+                    // stroke="white"
+                    // strokeWidth="1"
+                    strokeLinejoin="round"
+                    paintOrder="stroke fill"
+                    fontSize="25"
+                    fontWeight="bold"
+                    filter="url(#dropshadow2)"
+                  >
+                    JELLY TIME
+                  </text>
+                </svg>
+                <Image
+                  className="mt-[35px] w-full absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]"
+                  src={"/token-drip-1-mb.svg"}
+                  width={100}
+                  height={100}
+                />
+              </div>
             </div>
           </div>
 
+          <div className="relative mt-[100px]  px-[10px] z-[10] w-full">
+            <Image className="w-full" src={"/token-side-img-mb.svg"} width={100} height={500} />
+          </div>
 
           <Image
             className=" absolute -top-[140px]"
@@ -272,8 +509,13 @@ export default function Home() {
             height={500}
           />
         </div>
+
+
       </main>
-      <footer className=""></footer>
+      <footer className="">
+
+
+      </footer>
     </div>
   );
 }
