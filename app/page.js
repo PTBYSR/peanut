@@ -103,6 +103,45 @@ export default function Home() {
                   /> */}
 
                   <div className="w-[330px] relative ">
+                    <svg viewBox="0 0 300 80" className="w-full max-w-xs relative z-[10] mx-auto mb-[-20px]">
+  <text
+    x="50%" y="50%" dy=".35em" textAnchor="middle"
+    fill="white"
+    stroke="#2e7d32"
+    strokeWidth="2"
+    fontSize="48"
+    fontWeight="bold"
+    className="relative z-[10]"
+    // fontFamily="Comic Sans MS, sans-serif"
+    style={{ filter: "drop-shadow(0 0 10px #2e7d32)" }}
+  >
+    ABOUT
+  </text>
+</svg>
+
+
+ <svg viewBox="0 0 300 100" className="w-full max-w-xs relative z-[10] mx-auto mb-[-20px]">
+      <text
+        x="50%"
+        y="50%"
+        dy=".35em"
+        textAnchor="middle"
+        fill="white"
+        stroke="#2F9259"
+        strokeWidth="9"
+        strokeLinejoin="round"
+        paintOrder="stroke fill"
+        fontSize="62"
+        fontWeight="bold"
+        style={{
+          filter:
+            "drop-shadow(0 0 2px #2F9259) drop-shadow(0 0 4px #2F9259)",
+        }}
+      >
+        ABOUT
+      </text>
+    </svg>
+
                     <h2 className="text-center relative z-[10] text-[70px] text-white stroke-about">
                       ABOUT
                     </h2>

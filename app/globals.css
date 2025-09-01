@@ -34,7 +34,8 @@ body {
 
 
 .stroke-token {
-  -webkit-text-stroke: 12px #310D01 ;
+  /* -webkit-text-stroke: 12px #310D01 ; */
+  text-stroke: 12px #310D01 ;
    paint-order: stroke fill;
   text-shadow: 
     0 0 5px #310D01,
