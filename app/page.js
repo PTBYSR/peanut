@@ -111,12 +111,42 @@ export default function Home() {
                     width={300}
                     height={300}
                   /> */}
-                      <Image
+                      {/* <Image
                         className=""
                         src={"/about-header.svg"}
                         width={250}
                         height={250}
-                      />
+                      /> */}
+                      <svg viewBox="0 0 300 100" className="w-full h-auto max-w-[600px] mx-auto relative z-[10]"
+  preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <filter id="dropshadow" height="130%">
+                  <feDropShadow
+                    dx="3"
+                    dy="3"
+                    stdDeviation="7"
+                    floodColor="#2F9259"
+                  />
+                </filter>
+              </defs>
+
+              <text
+                x="50%"
+                y="50%"
+                dy=".35em"
+                textAnchor="middle"
+                fill="white"
+                stroke="#2F9259"
+                strokeWidth="11"
+                strokeLinejoin="round"
+                paintOrder="stroke fill"
+                fontSize="53"
+                fontWeight="bold"
+                filter="url(#dropshadow)"
+              >
+                ABOUT
+              </text>
+            </svg>
                     </div>
 
                     <p className="text-[#321502] px-[20px]  mt-2 relative z-[10] text-[16px] font-bold text-center">
@@ -163,13 +193,13 @@ export default function Home() {
 
         <div
           id="tokenomics"
-          className="w-full bg-[#BE731D] flex justify-center items-center mb-[50px] relative"
+          className="w-full bg-[#BE731D]  mb-[50px] relative"
         >
           <div className="w-full flex justify-center items-center">
             <svg viewBox="0 0 300 100" className="w-full h-auto max-w-[600px] mx-auto relative z-[10]"
   preserveAspectRatio="xMidYMid meet">
               <defs>
-                <filter id="dropshadow" height="130%">
+                <filter id="dropshadow1" height="130%">
                   <feDropShadow
                     dx="3"
                     dy="3"
@@ -191,12 +221,50 @@ export default function Home() {
                 paintOrder="stroke fill"
                 fontSize="40"
                 fontWeight="bold"
-                filter="url(#dropshadow)"
+                filter="url(#dropshadow1)"
               >
                 TOKENOMICS
               </text>
             </svg>
           </div>
+
+          <div id="token-drip-1" className=" relative z-[10] flex flex-col justify-center items-center mt-[20px] gap-4">
+            <div className="w-full border-2 border-blue">
+              <svg viewBox="0 0 300 50" className="border-2 border-black w-full h-auto max-w-[600px] mx-auto relative z-[10]"
+  preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <filter id="dropshadow2" height="130%">
+                  <feDropShadow
+                    dx="0"
+                    dy="0"
+                    stdDeviation="6"
+                    floodColor="white"
+                  />
+                </filter>
+              </defs>
+
+              <text
+                x="50%"
+                y="50%"
+                dy=".35em"
+                textAnchor="middle"
+                fill="white"
+                // stroke="white"
+                // strokeWidth="1"
+                strokeLinejoin="round"
+                paintOrder="stroke fill"
+                fontSize="25"
+                fontWeight="bold"
+                filter="url(#dropshadow2)"
+              >
+                1,000,000,000,000
+              </text>
+            </svg>
+              <Image className="w-full absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[1]" src={"/token-drip-1-mb.svg"} width={100} height={100} />
+            </div>
+          </div>
+
+
           <Image
             className=" absolute -top-[140px]"
             src={"/token-wrapper-mb.svg"}
